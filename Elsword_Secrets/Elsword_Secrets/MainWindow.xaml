@@ -1,0 +1,55 @@
+﻿<Window x:Class="Elsword_Secrets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Elsword_Secrets"
+        mc:Ignorable="d"
+        Title="Elsword Secrets Armors" Height="470" Width="681" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <TabControl x:Name="tabControl">
+            <TabItem x:Name="tabElder" Header="Elder">
+                <Grid x:Name="gridElder" Background="#FFE5E5E5">
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="171" Margin="148,29,0,0" VerticalAlignment="Top" Width="275" OpacityMask="Black"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabBesma" Header="Besma">
+                <Grid x:Name="gridBesma" Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabAltera" Header="Altera" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="54">
+                <Grid x:Name="gridAltera" Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabVelder" Header="Velder" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="54">
+                <Grid x:Name="gridVelder" Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabHamel" Header="Hamel" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="54" >
+                <Grid x:Name="gridHamel" Background="#FFE5E5E5">
+
+                    <Image x:Name="Peito_imgHamelGrendizado" HorizontalAlignment="Left" Height="44" Margin="43,205,0,0" VerticalAlignment="Top" Width="58" Source="Resources/Armaduras/hamelGrendizado_Peito.png" MouseLeftButtonUp="Peito_imgHamelGrendizado_MouseLeftButtonUp"/>
+                    <Image x:Name="Calca_imgHamelGrendizado" HorizontalAlignment="Left" Height="44" Margin="125,205,0,0" VerticalAlignment="Top" Width="58" Source="Resources/Armaduras/hamelGrendizado_Calca.png" MouseLeftButtonUp="Calca_imgHamelGrendizado_MouseLeftButtonUp"/>
+                    <Image x:Name="Luva_imgHamelGrendizado" HorizontalAlignment="Left" Height="44" Margin="211,205,0,0" VerticalAlignment="Top" Width="58" Source="Resources/Armaduras/hamelGrendizado_Luva.png"/>
+                    <Image x:Name="Sapato_imgHamelGrendizado" HorizontalAlignment="Left" Height="44" Margin="296,205,0,0" VerticalAlignment="Top" Width="58" Source="Resources/Armaduras/hamelGrendizado_Sapato.png"/>
+                    <Label x:Name="label" Content="Grendizado&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,167,0,0" Height="26"/>
+                    <Grid HorizontalAlignment="Left" Height="116" Margin="5,284,0,0" VerticalAlignment="Top" Width="650" Background="Snow"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabInventario" Header="Inventário" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="70" Margin="342,0,-342,0">
+                <Grid x:Name="gridInventario" Background="#FFE5E5E5">
+                    <!-- Coloque dentro do Grid todos os componentes de cada Aba -->
+                    <Button x:Name="btnInventario_Adicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="574,379,0,0" VerticalAlignment="Top" Width="74"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+
+    </Grid>
+</Window>
