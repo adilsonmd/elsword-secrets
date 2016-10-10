@@ -5,7 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
-
+	<link rel="stylesheet" href="<?php echo base_url() ?>public/css/bootstrap.min.css" />
+	
 	<style type="text/css">
 
 	::selection { background-color: #E13300; color: white; }
@@ -84,6 +85,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
-
+<script src="<?php echo base_url() ?>public/js/bootstrap.min.js"></script>
 </body>
 </html>
